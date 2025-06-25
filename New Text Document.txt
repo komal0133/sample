@@ -1,0 +1,194 @@
+Skip to content
+Navigation Menu
+Product
+Solutions
+Resources
+Open Source
+Enterprise
+Pricing
+
+Search or jump to...
+Sign in
+Sign up
+ArticlesDevOps
+What is Continuous Deployment?
+November 14, 2024
+
+Table of contents
+Continuous Deployment Defined
+What are the differences between continuous delivery and continuous deployment?
+The benefits of continuous deployment
+Building a continuous deployment practice
+How a continuous deployment pipeline works
+Continuous deployment pipeline stages
+How to make continuous deployment work in your organization
+Featured
+GitHub’s DevOps Solution
+Learn why 90% of the Fortune 100 use GitHub to build, scale, and deliver secure software.
+
+One of the more advanced automation practices in DevOps. It requires rigorous testing, cross-team collaboration, advanced tools, and workflow processes throughout the design and development stages.
+
+Continuous Deployment Defined
+Continuous deployment (CD) is an automated software release practice where code changes are deployed to different stages as they pass predefined tests. The goal of CD is to facilitate faster releases by using automation to help remove the need for human intervention as much as possible during the deployment process.
+
+What are the differences between continuous delivery and continuous deployment?
+Continuous delivery and continuous deployment are two DevOps automation practices that are often confused with one another—which isn't helped by the fact they're both often abbreviated as CD and handle similar responsibilities.
+
+But where continuous deployment applies automation to the entire release process, continuous delivery automates everything up to the deployment, or release, itself. At this point, human intervention is required to stage the deployment.
+
+Put more simply, delivery comes before deployment.
+
+A helpful way to think about the difference between continuous delivery and continuous deployment is what each does. In a continuous delivery practice, software is built in a way where it can be manually released at any time. Automation is used to ensure code changes are reviewed, merged, tested, packaged, and moved to a production environment so the software is ready to be shipped to customers.
+
+In contrast, continuous deployment automates the entire process including the release of the software itself. If code changes are successfully merged and pass all predefined, automated tests, it is immediately shipped to customers.
+
+In many ways, continuous deployment is a natural evolution of continuous delivery. If a continuous delivery pipeline is set up correctly and designed to test all elements of a software build before release, the need for someone to manually release the software to customers lessens over time.
+
+The benefits of continuous deployment
+When successfully implemented, continuous deployment makes it easier for businesses to quickly respond to customer demands and ship software updates at a rapid clip—often within minutes committing code changes.
+
+Still, implementing CD can be a radical shift from spending days, or even weeks preparing for a software release. But businesses that make the investment in time, resources, and tooling see concrete advantages.
+
+Some common benefits include:
+
+Fully automated deployment cycles. This enables organizations to spend more time building software instead of pausing development work in preparation for “release day.”
+
+More regular, incremental deployments. This leads to faster product development work and helps facilitate a continuous improvement model.
+
+Fast feedback loops on new features. Organizations can quickly get real-time feedback on new features, updates, and code changes.
+
+Building a continuous deployment practice
+Pro tip: This guide assumes you understand continuous integration and the concept of automated pipelines. If you're unclear on these DevOps practices, try reading our guide.
+DevOps seeks to increase the speed of innovation and value delivery by applying automation to every stage of the SDLC. With that view, continuous deployment stands as the ultimate goal of DevOps: A completely automated SDLC where every code change is pushed to production if it passes a predefined set of tests.
+
+In some ways, building an automated pipeline is one of the easiest parts of adopting a continuous deployment model. But very few organizations start their DevOps journey by building a continuous deployment practice due to the cultural change it signifies, and the maturity of the testing suite it requires.
+
+The availability of out-of-the-box integrations with our existing tooling is a big part of GitHub’s appeal. GitHub really helps bring DevOps to life.
+
+Danilo Suntal, Agile & DevOps lead at P&G
+In that light, it’s best to understand the process and journey it takes to achieve a fully functioning continuous deployment practice.
+
+The graphic below shows a high-level journey map for how organizations typically start thinking about automating the SDLC.
+
+Continuous Deployment Flow Graphic
+To start, organizations need to build a continuous integration (CI) practice. The foundational elements of a strong CI practice—regular code commits, a testing strategy, version control tooling, and a CI platform—set the stage for organizations to begin developing a continuous deployment practice.
+
+At its most basic, continuous deployment brings automated builds, tests, and deployments together in a single release workflow. The goal is to automate the deployment of software builds into production. Each company needs to identify the right combination of unit, functional, and stress tests that comprise its testing suite. It’s also critical to mirror production environment pressures in a pre-production environment to effectively stage and test builds and release candidates.
+
+Getting all of this right leads to a significant payoff: faster and more stable releases. It also positions organizations to achieve continuous deployment with a fully automated CI/CD pipeline.
+
+Ideally, a DevOps practice becomes so fine-tuned across its testing regimen, automation triggers, workflow composition, and CI/CD platforms that it naturally leads to continuous deployment. In effect, the need for human intervention to orchestrate a software release dissipates over time.
+
+In practice, however, achieving a durable and scalable continuous deployment model takes significant investments in engineering resources and tooling. And while CI/CD platforms and associated tooling go a long way to standing up a continuous deployment practice, a cultural change that emphasizes cross-team collaboration and regular code commits is critical.
+
+How a continuous deployment pipeline works
+Continuous deployment pipelines explained
+A continuous deployment pipeline is an automated workflow that brings together builds, tests, and deployments to push code changes to production. Each step in the workflow produces an output that provides an input for the next step. Automated testing and monitoring take place throughout a continuous deployment pipeline to catch any potential errors, functional problems, and bugs. This provides real-time alerts and prevents any potential issues from making it into the main software branch, or into production.
+
+The end result? Engineering teams can push code changes to the main branch and quickly see it being used in production, often within minutes. This approach to software development underscores the primary goal of DevOps: continuous value delivery to end users. It’s also a central reason why many of the applications and web-based services we use regularly get new features and system changes.
+
+Let’s explore the stages of the continuous deployment pipeline.
+
+Continuous deployment pipeline stages
+A continuous deployment pipeline model
+First, a note: There is no singular “model” for continuous deployment. Every organization will build a continuous deployment pipeline unique to their needs, software development practices, and customer demands.
+
+Despite this, there are four commonly accepted stages in any continuous deployment pipeline that every organization should build into their engineering plans. These include:
+
+Verification: Automated testing (functional, integration, security) ensures code works after integration before deployment.
+
+Deployment: Automated deployment begins once code passes all CI tests, often moving to production immediately after commit.
+
+Monitoring: Continuous monitoring with real-time alerts and performance metrics helps detect issues before, during, and after deployment.
+
+Response: Quick response to production issues, security incidents, or feature requests; MTTR is used to measure response efficiency.
+
+How to make continuous deployment work in your organization
+As one of the more advanced examples of DevOps automation, continuous deployment requires time, engineering resources, and tooling to successfully adopt. It also requires a strong DevOps culture that emphasizes strong collaboration across all stages of the SDLC.
+
+At GitHub, we know there is no singular model for continuous deployment. Every organization needs to build a practice that meets its needs and serves its business priorities. Even still, we see common best practices among all elite DevOps organizations that successfully adopt continuous deployment. These include:
+
+Focus on continuous integration first. A strong CI practice is foundational to building a successful continuous deployment practice and pipeline. This includes embracing a CI culture where every developer commits code changes multiple times a day. It also involves building out a strong automated testing strategy that ensures all code commits are screened before making it to production. Organizations should focus on automating as much of the SDLC as possible and keeping the main code branch green, or free from any potential issues. At GitHub, for instance, we have invested in building out our own CI/CD capabilities with GitHub Actions to have both a rich managed or self-hosted experience for organizations.
+
+Build a strong testing strategy. A continuous deployment practice means you’ll be releasing code changes as you make them—and any issues that aren’t caught by a test will make it into production. This makes it critical to develop a strong automated testing strategy that covers a large portion of your codebase. Most organizations aim to have at least 75% testing coverage. You’ll also want to spend time making sure your tests—be they unit, functional, performance, application, or security tests—are effective. It’s one thing to have large test coverage. It’s another thing to have good tests that make your codebase stronger, and ensure that you have confidence in your production code.
+
+Invest in a continuous monitoring practice. A strong testing suite and good testing coverage are critical in a continuous deployment practice. But without real-time monitoring in your testing and production environments, you’re at risk of missing the mark. A code change or new feature may introduce unintended issues your tests uncover before a deployment. And even if your tests show your codebase is stable, infrastructure issues may crop up in production when user activity introduces unexpected variables. This is why it’s critical to invest in continuous monitoring tooling to track real-time demands, system performance, and application behaviors. The best tools will help you track application and system performance as well as security issues and any irregularities in your systems. They’ll also provide you with real-time alerts and activity logs, so your engineering teams can work on potential fixes.
+
+Develop new tests as you develop new code. With every code change moving to production, a continuous deployment practice means you have less time to write new tests to verify them. This is a departure from other development methodologies, which typically leave more time for QA teams to work after developers have written new code and introduced new features. To solve this, it’s a good practice to develop tests as you develop new code. It’s even better if you can start thinking about your testing strategy as your product teams plan out new features. Building testing requirements into the planning and development stage is a good practice with continuous deployment. It will also have long-term benefits, as you increase your testing coverage in parallel with your product development work.
+
+Shift left and emphasize security across the SDLC. Security is a critical component in software today—and that’s especially true for organizations that embrace a continuous deployment practice where every code commit that passes all tests immediately makes it into production. DevSecOps is an evolution, or natural progression, of DevOps, and seeks to build security into every part of the SDLC. This means making security as early a part of the SDLC as possible—or shift lift—to ensure organizations are prioritizing the development of tests, searching out possible vulnerabilities, and strengthening systems as much as possible. A combination of tooling such as GitHub Advanced Security and cultural practices that encourage everyone to approach development with a security mindset is key. Other tools such as cloud IDEs (integrated development environments) can also be helpful to ensure your development environments are secure.
+
+Our philosophy is to build automation and great DevOps for the company you will be tomorrow.
+
+Senior SCM Engineer Todd O'Connor at Adobe
+Build your DevOps practice on GitHub
+GitHub is an integrated platform that takes companies from idea to planning to building to production, combining a focused developer experience with powerful, fully managed development, automation, and test infrastructure.
+
+More DevOps resources
+The Role of a DevOps Engineer
+Discover what a DevOps Engineer does: from integrating project development and operations to enhancing collaboration and automation in software delivery.
+
+Learn More
+SRE vs. DevOps: A Comparative Guide
+Explore the distinct roles of Site Reliability Engineering (SRE) and DevOps. Understand their unique approaches to automation, culture, and system reliability.
+
+Discover
+What is DevOps?
+By bringing people, processes, and products together, DevOps enables development teams to continuously deliver value.
+
+Learn more about DevOps
+Site-wide Links
+Subscribe to our developer newsletter
+Get tips, technical guides, and best practices. Twice a month.
+
+Product
+Features
+Enterprise
+Copilot
+AI
+Security
+Pricing
+Team
+Resources
+Roadmap
+Compare GitHub
+Platform
+Developer API
+Partners
+Education
+GitHub CLI
+GitHub Desktop
+GitHub Mobile
+Support
+Docs
+Community Forum
+Professional Services
+Premium Support
+Skills
+Status
+Contact GitHub
+Company
+About
+Why GitHub
+Customer stories
+Blog
+The ReadME Project
+Careers
+Newsroom
+Inclusion
+Social Impact
+Shop
+© 2025 GitHub, Inc.
+Terms
+Privacy (Updated 02/2024)
+Sitemap
+What is Git?
+Manage cookies
+Do not share my personal information
+GitHub on LinkedIn
+GitHub on Instagram
+GitHub on YouTube
+GitHub on X
+GitHub on TikTok
+GitHub on Twitch
+GitHub’s organization on GitHub
